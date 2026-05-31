@@ -29,6 +29,10 @@ header{
 .menu {
     display: none;
 }
+.menu.open{
+    display: flex;
+  
+}
 .divider {
     display: none;
 }
