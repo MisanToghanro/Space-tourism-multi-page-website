@@ -1,0 +1,150 @@
+body {
+    min-height: 100vh;
+    background-image: url("../assets/destination/background-destination-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+      color: white;
+  font-family: sans-serif;
+}
+.destination{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+}
+.destination-title {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+    margin-bottom: 2rem;
+}
+.destination-title span {
+    opacity: 0.4;
+    font-weight: 700;
+
+    margin-right: 0.75rem;
+}
+#destination-image {
+    width: 170px;
+    height: 170px;
+
+    margin-bottom: 2rem;
+}
+.destination-tabs {
+    display: flex;
+    gap: 1.5rem;
+     align-items: center;
+     justify-content: center;
+     padding: 2rem 2rem;
+    margin-bottom: 2rem;
+}
+.destination-tabs button {
+    background: none;
+    border: none;
+
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.destination-content {
+    max-width: 32rem;
+}
+.destination-content h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    margin-bottom: 1rem;
+}
+.destination-content p {
+    line-height: 1.8;
+
+    margin-bottom: 2rem;
+}
+.destination-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    width: 100%;
+    max-width: 28rem;
+}
+
+/*TABLET*/
+@media (min-width: 768px) {
+    body{
+         background-image: url("../assets/destination/background-destination-tablet.jpg");
+    }
+
+    .destination {
+        padding: 2rem 3rem;
+    }
+        #destination-image {
+        width: 300px;
+        height: 300px;
+    }
+    
+
+    .destination-content h1 {
+        font-size: 5rem;
+    }
+
+
+    .destination-stats{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+/*DESKTOP*/
+@media (min-width: 1024px) {
+    body{
+         background-image: url("../assets/destination/background-destination-desktop.jpg");
+    }
+    .destination{ 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: start;
+    padding: 4rem 8rem;
+    gap: 10rem
+
+}
+    #destination-image {
+        width: 400px;
+        height: 400px;
+    }
+
+.destination-tabs button {
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+.destination-tabs button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.5);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+.destination-tabs button:hover::after {
+    transform: scaleX(1);
+}
+
+}
+

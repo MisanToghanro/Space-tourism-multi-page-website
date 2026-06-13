@@ -9,33 +9,8 @@ body {
       color: white;
   font-family: sans-serif;
 }
-header{
-    display: flex;
-    justify-content:space-between;
-    padding: 10px 20px;
-    align-items: center;
-}
-.logo{
-    width: 40px;
-    height: 40px;
-}
-.menu-btn {
-    background: none;
-    border: none;
-}
-.menu-btn img {
-  display: block;
-}
-.menu {
-    display: none;
-}
-.menu.open{
-    display: flex;
-  
-}
-.divider {
-    display: none;
-}
+
+
 .hero{
     display: flex;
     flex-direction: column;
@@ -72,6 +47,11 @@ header{
     background-color: white;
     text-transform: uppercase;
     font-size: 1.1rem;
+    color: black;
+}
+.explore-btn a {
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -80,52 +60,7 @@ header{
     body{
          background-image: url("../assets/home/background-home-tablet.jpg");
     }
-    header{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .menu{
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        padding: 2rem 5rem;
-        background: rgba(255, 255, 255, 0.08);
-        backdrop-filter: blur(20px);
-        margin-left: auto;
-    }
-    .menu a{
-        text-decoration: none;
-        color: white;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: 0.9rem;
-        position: relative;
-    }
-    .menu a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2rem;
 
-    width: 100%;
-    height: 3px;
-
-    background-color: white;
-
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
-
-.menu a:hover::after {
-    transform: scaleX(1);
-}
-.menu span {
-    font-weight: 700;
-}
-    .menu-btn {
-    display: none;
-}
     .explore-btn {
         width: 242px;
         height: 242px;
@@ -157,16 +92,5 @@ header{
     .explore-btn:hover{
         opacity: 0.9;
     }
-    .divider {
-        display: block;
-        flex: 1;
-        height: 1px;
 
-        background: rgba(255, 255, 255, 0.25);
-
-        margin-left: 3rem;
-        margin-right: -2rem;
-
-        z-index: 10;
-    }
 }

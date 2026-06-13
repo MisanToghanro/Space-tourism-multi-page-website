@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+        <link rel="stylesheet" href="./style/main.css">
+        <link rel="stylesheet" href="./style/destination.css">
+        <title>Space tourism website</title>
+    </head>
+    <body>
+    <header>
+    <img  src="./assets/shared/logo.svg" alt="website logo" class="logo"/>
+
+    <div class="divider"></div>
+
+    <button class="menu-btn" aria-label="open menu" id="menu-icon">
+      <img src="./assets/shared/icon-hamburger.svg" alt="Open menu" />
+    </button>
+
+    <nav class="menu">
+      
+      <a href="index.html"> <span>00</span> Home</a>
+      <a href="destination.html">  <span>01</span> Destination</a>
+      <a href="#">  <span>02</span> Crew</a>
+      <a href="#">   <span>03</span> Technology</a>
+    </nav>
+  </header>
+  
+  <main class="destination">
+    <div>
+  <h2 class="destination-title">
+  <span>01</span>
+    Pick your destination
+  </h2>
+
+  <img
+    id="destination-image"
+    src="./assets/destination/image-moon.png"
+    alt="Moon"
+  />
+
+    </div>
+
+    <div>
+        <nav class="destination-tabs">
+    <button data-planet="Moon">Moon</button>
+    <button data-planet="Mars">Mars</button>
+    <button data-planet="Europa">Europa</button>
+    <button data-planet="Titan">Titan</button>
+  </nav>
+
+  <div class="destination-content">
+    <h1 id="destination-name">Moon</h1>
+
+    <p id="destination-description">
+      Loading...
+    </p>
+  </div>
+
+  <div class="destination-stats">
+    <div>
+      <h3>Avg. Distance</h3>
+      <p id="destination-distance"></p>
+    </div>
+
+    <div>
+      <h3>Est. Travel Time</h3>
+      <p id="destination-travel"></p>
+    </div>
+  </div>
+
+    </div>
+
+</main>
+
+<script src="./javascript/destination.js"></script>
+<script src="./javascript/index.js"></script>
+    </body>
+</html>
