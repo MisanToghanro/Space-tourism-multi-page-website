@@ -145,6 +145,10 @@ body {
 .destination-tabs button:hover::after {
     transform: scaleX(1);
 }
+.destination-tabs button.active::after {
+    transform: scaleX(1);
+    background: white;
+}
 
 }
 

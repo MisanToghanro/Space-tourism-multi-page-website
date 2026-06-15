@@ -15,7 +15,11 @@ const loadDestinations = async (params) => {
     renderDestination(data.destinations[0]);
 
     tabs.forEach(tab => {
+
         tab.addEventListener("click", () => {
+              tabs.forEach(tab => tab.classList.remove("active"))
+              tab.classList.add("active")
+
             const planetName = tab.dataset.planet;
             const destination = data.destinations.find(
                 item => item.name === planetName
