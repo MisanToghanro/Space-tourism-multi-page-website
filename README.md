@@ -19,7 +19,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Space Tourism Website](./starter-code/preview.jpg)
+![Space Tourism Website](./preview.jpg)
 
 ### Links
 
