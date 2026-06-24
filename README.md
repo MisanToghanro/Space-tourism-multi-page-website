@@ -19,11 +19,11 @@ Users should be able to:
 
 ### Screenshot
 
-![Space Tourism Website](./preview.jpg)
+![Space Tourism Website](./space-tourism-website-main/preview.jpg)
 
 ### Links
 
-* Live Site URL: [text](https://space-tourism-multi-page-website-theta.vercel.app/)
+* Live Site URL: https://space-tourism-multi-page-website-theta.vercel.app/
 
 ## Built With
 
@@ -57,7 +57,7 @@ In future projects, I would like to:
 
 ## Author
 
-* GitHub - [text](https://github.com/MisanToghanro)
-* Frontend Mentor - [text](https://www.frontendmentor.io/profile/MisanToghanro)
-* LinkedIn - [text](https://www.linkedin.com/in/misan-toghanro/)
-* Portfolio - [text](https://misandev.vercel.app/)
+* GitHub - https://github.com/MisanToghanro
+* Frontend Mentor - https://www.frontendmentor.io/profile/MisanToghanro
+* LinkedIn - https://www.linkedin.com/in/misan-toghanro/
+* Portfolio - https://misandev.vercel.app/
