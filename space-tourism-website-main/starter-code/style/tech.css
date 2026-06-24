@@ -4,8 +4,28 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-      color: white;
+color: white;
   font-family: sans-serif;
+}
+body p {
+    line-height: 1.8;
+}
+
+main {
+    padding: 2rem 1.5rem;
+}
+.page-title{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.page-title span {
+    opacity: 0.4;
+font-weight: 700;
+margin-right: 0.5rem;
 }
 
 .tech-content {
@@ -50,6 +70,9 @@ color: black;
     body {
          background-image: url("../assets/technology/background-technology-tablet.jpg");
     }
+    main {
+    padding: 3rem 2.5rem;
+}
 }
 
 @media (min-width: 1024px) {
@@ -61,11 +84,40 @@ color: black;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-
+        text-align: left;
         gap: 4rem;
     }
 
     .button-navigation{
         flex-direction: column;
+        order: 1;
+        margin-bottom: 0;
+        margin-right: 3;
+        gap: 2rem;
     }
+        .button-navigation button {
+        width: 70px;
+        height: 70px;
+
+        font-size: 1.5rem;
+    }
+    #tech-img {
+        order: 3;
+    }
+        .tech-info {
+        order: 2;
+        text-align: left;
+    }
+    main {
+    padding: 4rem 6rem;
+    
+}
+.page-title {
+    margin-bottom: 4rem;
+}
+.tech-info{
+    max-width: 32rem;
+    gap: 1rem;
+    
+}
 }
